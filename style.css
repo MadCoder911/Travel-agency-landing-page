@@ -112,8 +112,6 @@ ul {
     flex-direction: column;
     background-color: var(--main-color);
     width: 100%;
-    position: relative;
-    margin-top: 10px;
     transition: transform 0.5s, opacity 0.5s;
     position: absolute;
     z-index: 2;
@@ -463,8 +461,18 @@ ul {
     display: none;
   }
 }
+
 .section5 .content {
   margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .section5 .content {
+    margin-right: 0px;
+  }
 }
 .section5 .content h1 {
   font-size: 60px;
